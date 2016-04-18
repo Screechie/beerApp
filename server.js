@@ -7,7 +7,7 @@ var BreweryDb = require('brewerydb-node');
 var brewdb = new BreweryDb('5e492c7ac91e7d3f0de1b48ed9622370');
 
 app.get('/beers', function (req, res) {
-  	brewdb.search.beers({ q: "dogfish" }, function(error, data) {
+  	brewdb.search.beers({ q: "banks" }, function(error, data) {
   	res.json(data) //terminates search
   });
 });
