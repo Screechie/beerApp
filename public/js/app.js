@@ -4,7 +4,7 @@ $(function(){
 	//Return all beers
 	$("#beers").on("submit",function(e){
 		e.preventDefault();
-		$.getJSON("/beers", function(data){
+		$.getJSON("/search", function(data){
 			console.log(data);
 		})
 	});
