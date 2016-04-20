@@ -3,14 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
-  <script src="../bower_components/mustache.js/mustache.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/united/bootstrap.min.css" rel="stylesheet" integrity="sha384-0UBL8wxZ28kqJ8w8N8RUV0odBG5w8D/Y+rb+o7hr2F3dS9twlAE8S7VUtVSRe5cc" crossorigin="anonymous">
+  <script src="mustache.js/mustache.js"></script>
 </head>
 <body>
 
-<form id="beers">
-	<input type="text" placeholder = "Beer Search">
-	<button>Search</button>
-</form>
+<div>
+	<form class="form-horizontal"id="beers">
+		<div class="form-group">
+		  <label for="searchBeers" class="col-md-2 control-label">Search Beers</label>
+		  <div class="col-md-10">
+		    <input type="text" class="form-control" id="searchBeer" placeholder="Search Beers">
+		  </div>
+		 </div>
+	  <a href="#" class="btn btn-primary">Beer Search</a>	
+	</form>
+</div>
+
+<div>
+	<h1>BAC Calculator</h1>
+	<form class="form-horizontal" id="bac">
+
+		<div class="form-group">
+	      <label for="inputName" class="col-md-2 control-label">Name</label>
+	      <div class="col-md-10">
+	        <input type="text" class="form-control" id="name" placeholder="Name">
+	      </div>
+	  </div>
+
+	  <div class="form-group">
+	      <label for="inputSex" class="col-md-2 control-label">Sex</label>
+	      <div class="col-md-10">
+	        <input type="text" class="form-control" id="sex" placeholder="Sex">
+	      </div>
+	  </div>
+
+	  <div class="form-group">
+	      <label for="inputWeight" class="col-md-2 control-label">Weight</label>
+	      <div class="col-md-10">
+	        <input type="text" class="form-control" id="weight" placeholder="Weight">
+	      </div>
+	  </div>
+
+	   <div class="form-group">
+	      <label for="inputAge" class="col-md-2 control-label">Age</label>
+	      <div class="col-md-10">
+	        <input type="text" class="form-control" id="age" placeholder="Age">
+	      </div>
+	  </div>
+
+	  <div class="form-group">
+	      <label for="inputTime" class="col-md-2 control-label">Duration of time drinking</label>
+	      <div class="col-md-10">
+	        <input type="text" class="form-control" id="drinktime" placeholder="How long have you been drinking?">
+	      </div>
+	  </div>
+		
+		<label for="beersconsumed">No. of beers consumed in ounces</label>
+		<select name="beersConsumed" id="beerscon">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+		</select>
+
+		<a href="#" class="btn btn-primary">Submit</a>
+	</form>
+</div>
 
 
 
